@@ -1,0 +1,118 @@
+.header{
+    box-shadow: 30px 20px 30px 0px #ccc;
+    position: relative;
+    z-index: 10;
+    
+    
+    .top-section{
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            display: flex;
+            align-items: center;
+    
+    
+            img{
+                width: 40px;
+                opacity: .8;
+                cursor: pointer;
+            }
+            p{
+               font-size: 20px;
+               letter-spacing: 3px;
+               font-family: 'Courier New', Courier, monospace; 
+            }
+        }
+        .icons{
+            img{
+                width: 30px;
+                cursor: pointer;
+                
+            }
+            
+            .lock{
+                opacity: .7;
+            }
+            .basket{
+                
+                margin-left: 40px;
+            }
+    
+            @media (max-width: 630px) {
+                .lock{
+                    display: none;
+                }
+            }
+    
+        }
+    
+        .search{
+            display: flex;
+            align-content: center;
+            border: 1px solid rgb(168, 168, 168);
+            max-width: 300px;
+            max-height: 30px;
+            padding: 12px 12px;
+            border-radius: 6px;
+            position: relative;
+           
+            .input{
+                border: none;
+                outline: none;
+                border-radius: 6px;
+                width: 300px;
+        
+            }
+            .input::placeholder{
+               
+                font-size: 18px;
+            }
+            .search-icon{
+                position: absolute;
+                opacity: .7;
+                width: 20px;
+                left: 288px;
+                bottom: 10px;
+            }
+        }
+        
+    }
+.line{
+    opacity: .5;   //------------------------------------------------------------------- Bottom Section --------------------------------------
+}
+    .bottom-section{
+        
+            padding: 20px 0;
+
+
+        .links{
+            display: flex;
+            
+            a{
+                margin-left: 50px;
+                text-decoration: none;
+                color:rgb(81, 80, 80) ;
+            }
+            a:hover{
+                color: #000;
+            }
+            i{
+                margin-left: 4px;
+                cursor: pointer;
+                opacity: .8;
+            }
+        }
+
+        @media (max-width:950px) {
+            a:nth-child(1), 
+            a:nth-child(2), 
+            a:nth-child(3), 
+            a:nth-child(4){
+                
+                display: none;
+            }
+        }
+    }
+}
