@@ -1,0 +1,10 @@
+h2 {
+  margin-left: 20px;
+}
+.products {
+  display: grid;
+
+  grid-template-columns: repeat(4, 200px);
+
+  gap: 1rem;
+}
