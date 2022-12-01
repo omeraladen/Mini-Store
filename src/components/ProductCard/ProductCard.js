@@ -6,10 +6,10 @@ function ProductCard({ title, price, description, image }) {
     <>
       <div className="product-card">
         <div className="cards">
-          <img alt="products" src={image} height={100} width={100} />
-          <h4>{title}</h4>
-          <p>{description}</p>
-          <h5>${price}</h5>
+          <img className="p-img" alt="products" src={image} height={100} width={100} />
+          <h4 className="name">{title}</h4>
+          <p className="description">{description}</p>
+          <h5><span>$</span>{price}</h5>
           <button className="product-btn">Add to Card</button>
         </div>
       </div>
